@@ -1,0 +1,546 @@
+/*MARGIN RESET*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  #d8d8d8;
+    font-family: 'Roboto Slab', serif; 
+}
+
+/*NAVEGADOR*/
+.fondoNavegador {
+    background-color: #ffffff86;
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.fondoNavegador__navegador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.fondoNavegador__navegador a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.fondoNavegador__navegador a:visited{
+    color: #000000;
+}
+
+.fondoNavegador__navegador a:hover{
+    color:#734c4c;
+}
+
+.fondoNavegador__navegador ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+
+/*---MOBILE RESPONSIVE DEL NAVEGADOR---*/
+@media screen and (max-width: 500px) {
+
+    .fondoNavegador {
+        height: 150px;
+    }
+
+    .listaNavegador{
+        display: flex;
+        flex-direction: column;
+    } 
+}
+
+/*BANNER*/
+.banner {
+    height: 555px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 10px 5px 5px  #0f0f0e8a;
+}
+
+.imagenBanner{
+    background-image: url(../multimedia/velabannerr.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat:round;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloBanner{
+    color: #ffffff;
+    font-size: xx-large;
+    text-align: center;
+}
+
+/*BOTON DE VER PRODUCTOS EN BANNER*/
+.imagenBanner a{
+    text-decoration: none;
+    color: #ffffff;
+    border: 4px solid #ffffff;
+    font-size: large;
+    margin: 10px;
+    transition: 1s;
+    padding: 10px;
+}
+
+.imagenBanner a:hover {
+    background-color: #734c4c;
+    color: white;
+    border: 4px solid #734c4c;
+}
+
+/*TITULO DE LÍNEAS*/
+h3{
+    font-size: xx-large;
+    margin: 5% auto;
+    text-align: center;
+}
+
+
+/*---MOBILE RESPONSIVE IMAGEN BANNER DE INDEX---*/
+@media screen and (max-width: 500px) {
+
+    .imagenBanner{
+        background-image: none;
+        background-color: #734c4c;
+    }
+    
+}
+
+/*PRODUCTOS*/
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+
+.productoContenedor{
+    width: 300px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 1%;
+    background-color: #ffffff15;
+    transition: 1s;
+}
+
+.productoContenedor:hover{
+    box-shadow: 0 0 10px #0000003d;
+}
+
+.productoContenedor img{
+    width: 100%;
+    transition: 3s;
+}
+
+.productoContenedor img:hover{
+    transform: scale(1.2);
+}
+
+.imagenContenedor{
+    overflow: hidden;
+}
+
+.productoContenedor a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.textoProducto{
+    display: flex;
+    flex-direction: column;
+    font-size:medium;
+}
+
+
+/*---MOBILE RESPONSIVE DESIGN PRODUCTOS---*/
+@media screen and (max-width: 500px) {
+
+    .productos{
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+/*INFORMACIÓN*/
+.contenedorGrid{
+    width: 70%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+    "infoSoja imagenSoja"
+    "imagenConsejos infoConsejos"
+    "infoTerapia imagenTerapia"
+    "imagenRefill infoRefill";
+    justify-content: center;
+    align-content: center;
+    background-color: #ffffff;
+    box-shadow: 10px 5px 5px  #0f0f0e8a;
+    border-radius: 1em;
+}
+
+/*AREAS*/
+.infoSoja {
+    grid-area: infoSoja;
+}
+
+.imagenSoja {
+    grid-area: imagenSoja;
+}
+
+.imagenConsejos {
+    grid-area: imagenConsejos;
+}
+
+.infoConsejos {
+    grid-area: infoConsejos;
+}
+
+.infoTerapia {
+    grid-area: infoTerapia;
+}
+
+.imagenTerapia {
+    grid-area: imagenTerapia;
+}
+
+.imagenRefill {
+    grid-area: imagenRefill;
+}
+
+.infoRefill {
+    grid-area: infoRefill;
+}
+
+/*TEXTO SOJA*/
+.infoSoja{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloSoja{
+    text-align: center;
+    color: #734c4c;
+}
+
+.contenedorSoja{
+    width: 70%;
+}
+
+/*TEXTO CONSEJOS*/
+.infoConsejos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloConsejos{
+    text-align: center;
+    color: #734c4c;
+}
+
+.contenedorConsejos{
+    width: 70%;
+}
+
+/*TEXTO TERAPIA*/
+.infoTerapia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloTerapia{
+    text-align: center;
+    color: #734c4c;
+}
+
+.contenedorTerapia{
+    width: 70%;
+}
+
+.listaTerapia{
+    text-align: center;
+}
+
+/*TEXTO AREFILL*/
+.infoRefill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloRefill{
+    text-align: center;
+    color: #734c4c;
+}
+
+.contenedorRefill{
+    width: 70%;
+}
+
+.listaRefill{
+    text-align: center;
+}
+
+/*IMAGEN SOJA*/
+.imagenSoja{
+    background-image: url(../multimedia/imagensoja.jpg);
+    background-size:100%;
+    transition: 1s;
+    border-top-right-radius: 1em;
+}
+
+.imagenSoja:hover{
+    filter: grayscale(90%);
+}
+
+/*IMAGEN CONSEJOS*/
+.imagenConsejos{
+    background-image: url(../multimedia/imagenconsejos.jpeg);
+    background-size:100%;
+    transition: 1s;
+}
+
+.imagenConsejos:hover{
+    filter: grayscale(90%);
+}
+
+/*IMAGEN TERAPIA*/
+.imagenTerapia{
+    background-image: url(../multimedia/imagenterapia.jpg);
+    background-size:100%;
+    transition: 1s;
+}
+
+.imagenTerapia:hover{
+    filter: grayscale(90%);
+}
+
+
+/*IMAGEN REFILL*/
+.imagenRefill{
+    background-image: url(../multimedia/imagenrefill.jpeg);
+    background-size:100%;
+    transition: 1s;
+    border-bottom-left-radius: 1em; 
+}
+
+.imagenRefill:hover{
+    filter: grayscale(90%);
+}
+
+/*---TABLET RESPONSIVE DESIGN INFORMACIÓN---*/
+@media screen and (max-width: 768px) {
+    .contenedorGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+        grid-template-areas:
+        "infoSoja"
+        "imagenSoja"
+        "infoConsejos"
+        "imagenConsejos"
+        "infoTerapia"
+        "imagenTerapia"
+        "infoRefill"
+        "imagenRefill";
+    }
+
+    .imagenSoja{
+        border-top-right-radius: 0;
+    }
+
+    .imagenRefill{
+        border-bottom-right-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }  
+}
+
+/*---MOBILE RESPONSIVE DESIGN INFORMACIÓN---*/
+@media screen and (max-width: 500px) {
+    .contenedorGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 3fr 3fr 3fr;
+        grid-template-areas:
+        "infoSoja"
+        "infoConsejos"
+        "infoTerapia"
+        "infoRefill";
+    }
+
+    .imagenSoja{
+        display: none;
+    }
+    
+    .imagenConsejos{
+        display: none;
+        }
+    
+    .imagenTerapia{
+        display: none;
+       }
+    
+    .imagenRefill{
+        display: none;
+      } 
+}
+
+
+/*CONTACTO*/
+
+/*BANNER*/
+.bannerContacto{
+    height: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 10px 5px 5px  #0f0f0e8a;
+}
+
+.imagenContacto{
+    width: 100%;
+    height: 100%;
+    background-image: url(../multimedia/velacontacto2.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*MENSAJE Y CONTACTO*/
+.contenedorMC{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+/*CENTRA Y SEPARA TÍTULOS*/
+h2{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.contenedorMensaje{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+input{
+    border: none;
+    border-bottom: solid 1px #000000;
+    width: 400px;
+}
+
+textarea{
+    border: solid 1px #000000;
+}
+
+input, textarea {
+    background-color: #d8d8d8;
+    padding: 5px;;
+  }
+
+.boton{
+    display: inline-block;
+    border: solid 1px #000000;
+    color: #ffffff;
+    padding: 10px;
+    width: 30%;
+    background-color: #000000;
+    transition: 1s;
+}
+
+.boton:hover{
+    background-color: #734c4c;
+    border: solid 1px #734c4c;
+}
+
+.textoContacto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*---MOBILE RESPONSIVE DE CONTACTO---*/
+@media screen and (max-width: 500px) {
+    .contenedorMC{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .textoContacto{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .imagenContacto{
+        display: none;
+    }
+
+    .bannerContacto{
+        display: none;
+    }
+    
+}
+
+/*--FOOTER--*/
+
+footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: #734c4c;
+}
+
+footer p{
+    color: #ffffff;
+    font-size: large;
+    text-align: center;
+}
+
+.redes img{
+    width: 30px;
+    height: 30px; 
+    margin: 10px;
+    
+}
+
+/*COLOR DE "NUESTRAS REDES" EN CONTACTO PQ CAMBIE SU ETIQUETA*/
+footer h2{
+    color: #ffffff;
+}
