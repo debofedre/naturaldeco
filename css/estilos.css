@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+/*SCROLL*/
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color:  #ffffff;
     font-family: 'Roboto Slab', serif; 
