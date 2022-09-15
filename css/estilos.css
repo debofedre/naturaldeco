@@ -520,14 +520,14 @@ h3{
     justify-content: center;
 }
 
-/*MENSAJE Y CONTACTO*/
+/*MENSAJE Y CONTACTO
 .contenedorMC{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 80px;
-}
+}*/
 
-/*CENTRA Y SEPARA TÍTULOS*/
+/*CENTRA Y SEPARA TÍTULOS
 h2{
     margin: 30px auto;
     text-align: center;
@@ -574,9 +574,9 @@ input, textarea {
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
+}*/
 
-/*---MOBILE RESPONSIVE DE CONTACTO---*/
+/*---MOBILE RESPONSIVE DE CONTACTO
 @media screen and (max-width: 500px) {
     .contenedorMC{
         display: flex;
@@ -602,7 +602,21 @@ input, textarea {
         display: none;
     }
     
+}---*/
+
+/*CONTACTO BOOTSRAP*/
+
+/*sperapa el mapa del form*/
+@media (max-width: 576px) {
+    .mt-mobile{
+        margin-top: 3rem;
+    }
 }
+
+.btnNegro{
+    background-color: #000000;
+}
+
 
 /*--FOOTER--
 footer {
