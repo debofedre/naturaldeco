@@ -647,7 +647,6 @@ footer p{
     text-align: left;
 }
 
-
 .redes img{
     width: 40px;
     height: 40px; 
@@ -680,4 +679,11 @@ footer p{
     max-width: 100%;
     padding: 0;
     margin: 20px auto 0 auto;
+}
+
+.lineasFooter {
+    border-top: 1px solid rgb(255, 255, 255);
+    height: 2px;
+    max-width: 60px;
+    margin: 20px 0;
 }
