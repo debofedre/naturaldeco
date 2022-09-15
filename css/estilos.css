@@ -71,6 +71,10 @@ h1{
     color: #ffffff;
 }
 
+.tituloNav{
+    color: #ffffff;
+}
+
 /*BANNER
 .banner {
     height: 555px;
@@ -615,6 +619,23 @@ input, textarea {
 
 .btnNegro{
     background-color: #000000;
+}
+
+.textoContacto{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.lineaContacto {
+    border-top: 1px solid rgb(0, 0, 0);
+    height: 2px;
+    max-width: 60px;
+    margin: 20px 0;
+}
+
+.alinearRedes {
+    margin-left: 26px;
 }
 
 
