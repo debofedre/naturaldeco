@@ -20,24 +20,58 @@
       rel="stylesheet"
     />
 
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css" />
   </head>
   <body>
+    
+    <!--NAVEGADOR
     <header class="fondoNavegador">
       <section class="fondoNavegador__navegador">
         <h1>Información</h1>
         <nav>
           <ul>
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="Informacion.html">Información</a></li>
+            <li><a href="informacion.html">Información</a></li>
             <li><a href="velas.html">Glam & Capri</a></li>
             <li><a href="ceramica.html">Cerámica</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </section>
-    </header>
+    </header>-->
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../multimedia/logonaturaldeco.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Información</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./velas.html">Glam & Capri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ceramica.html">Cerámica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!--IMAGENES + INFO-->
   
@@ -45,7 +79,7 @@
 
       <!--SOJA-->
       <div class="infoSoja">
-        <h1 class="tituloSoja">Ventajas de la cera de soja</h1>
+        <h3 class="tituloSoja">Ventajas de la cera de soja</h3>
         <div class="contenedorSoja">
           <ol class="listaSoja" type="1">
             <li>Es <strong>100 % natural y ecológica</strong></li>
@@ -62,7 +96,7 @@
       
       <!--CONSEJOS-->
       <div class="infoConsejos">
-        <h1 class="tituloConsejos">Consejos</h1>
+        <h3 class="tituloConsejos">Consejos</h3>
         <div class="contenedorConsejos">
           <ol class="listaConsejos" type="1">
             <li>
@@ -95,7 +129,7 @@
       
       <!--TERAPIA-->
       <div class="infoTerapia">
-        <h1 class="tituloTerapia">Aromaterapia</h1>
+        <h3 class="tituloTerapia">Aromaterapia</h3>
         <div class="contenedorTerapia">
           <p class="listaTerapia">
             Además de ser decorativas, nuestras velas aromatizan aportando las
@@ -110,7 +144,7 @@
       
       <!--REFILL-->
       <div class="infoRefill">
-        <h1 class="tituloRefill">Servicio de Refill</h1>
+        <h3 class="tituloRefill">Servicio de Refill</h3>
         <div class="contenedorRefill">
           <p class="listaRefill" type="none">
             Una vez consumida tu vela, podés traernos el envase así lo
@@ -144,5 +178,8 @@
         /></a>
     </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>

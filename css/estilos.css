@@ -14,7 +14,7 @@ body{
     font-family: 'Roboto Slab', serif; 
 }
 
-/*NAVEGADOR*/
+/*NAVEGADOR
 h1{
     color: #ffffff;
 }
@@ -50,10 +50,10 @@ h1{
 .fondoNavegador__navegador ul li{
     display: inline-block;
     margin: 10px;
-}
+}*/
 
 
-/*---MOBILE RESPONSIVE DEL NAVEGADOR---*/
+/*---MOBILE RESPONSIVE DEL NAVEGADOR
 @media screen and (max-width: 500px) {
 
     .fondoNavegador {
@@ -64,9 +64,14 @@ h1{
         display: flex;
         flex-direction: column;
     } 
+}---*/
+
+/*NAVEGADOR BOOTSTRAP*/
+.nav-item a{
+    color: #ffffff;
 }
 
-/*BANNER*/
+/*BANNER
 .banner {
     height: 555px;
     width: 100%;
@@ -92,9 +97,9 @@ h1{
     color: #ffffff;
     font-size: xx-large;
     text-align: center;
-}
+}*/
 
-/*BOTON DE VER PRODUCTOS EN BANNER*/
+/*BOTON DE VER PRODUCTOS EN BANNER
 .imagenBanner a{
     text-decoration: none;
     color: #ffffff;
@@ -107,6 +112,39 @@ h1{
 
 .imagenBanner a:hover {
     background-color: #00000088;
+}*/
+
+/*BANNER BOOTSTRAP*/
+
+/*TEXTO DEL BANNER CENTRALIZADO*/
+.carousel-inner{
+    top: 20%;
+    text-align: left;
+    margin-right: 40%;
+}
+
+.captionCenter{
+    top: 20%;
+    text-align: center;
+}
+
+.captionLeft h3{
+    text-align: left;
+}
+
+/*BOTON DE VER PRODUCTOS*/
+.verProductos{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    font-size: large;
+    padding: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.verProductos:hover {
+    background-color: #00000088;
+    color: #ffffff;
 }
 
 /*TITULO DE LÍNEAS*/
@@ -207,13 +245,17 @@ h3{
     flex-direction: column;
     font-size:medium;
     color: #000000;
-    padding: 10px 0;
+    padding: 3px 0;
+}
+
+/*TEXTO DE TARJETAS MÁS UNIDO*/
+.textoProducto p{
+    margin-bottom: 5px;
 }
 
 .textoProducto:visited{
     color: #000000;
 }
-
 
 /*---MOBILE RESPONSIVE DESIGN PRODUCTOS---*/
 @media screen and (max-width: 500px) {
@@ -243,7 +285,7 @@ h3{
     gap: 30px;
 }
 
-/*AREAS*/
+/*AREAS ESPECIFICADAS*/
 .infoSoja {
     grid-area: infoSoja;
 }
@@ -319,7 +361,7 @@ h3{
 }
 
 .tituloTerapia{
-    text-align: center;
+    text-align: justify;
     color: #000000;
 }
 
@@ -328,7 +370,7 @@ h3{
 }
 
 .listaTerapia{
-    text-align: center;
+    text-align: justify;
 }
 
 /*TEXTO AREFILL*/
@@ -340,7 +382,7 @@ h3{
 }
 
 .tituloRefill{
-    text-align: center;
+    text-align: justify;
     color: #000000;
 }
 
@@ -349,7 +391,7 @@ h3{
 }
 
 .listaRefill{
-    text-align: center;
+    text-align: justify;
 }
 
 /*IMAGEN SOJA*/
@@ -456,7 +498,7 @@ h3{
 
 /*BANNER*/
 .bannerContacto{
-    height: 450px;
+    height: 500px;
     width: 100%;
     background-color: #ffffff;
     box-shadow: 10px 5px 5px  #0f0f0e8a;
@@ -470,7 +512,7 @@ h3{
     background-size: cover;
     background-repeat: no-repeat;
     background-position:bottom bottom;
-    background-image: url(../multimedia/velacontacto2.jpg);
+    background-image: url(../multimedia/velacontacto.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -521,7 +563,7 @@ input, textarea {
 .boton{
     display: inline-block;
     color: #ffffff;
-    padding: 15px;
+    padding: 10px;
     width: 20%;
     background-color: #000000;
     border: none;
@@ -573,12 +615,10 @@ footer {
     background-color: #000000;
 }
 
-
-
 footer p{
     color: #ffffff;
     font-size: large;
-    text-align: center;
+    text-align:justify;
 }
 
 .redes img{
