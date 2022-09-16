@@ -610,21 +610,21 @@ input, textarea {
 
 /*CONTACTO BOOTSRAP*/
 
-/*sperapa el mapa del form*/
-@media (max-width: 576px) {
+
+@media (max-width: 570px) {
+
+    /*sperapar el mapa del form*/
     .mt-mobile{
         margin-top: 3rem;
     }
+    /*columna*/
+    .d-flex{
+        display: flex;
+        flex-direction: column;
+    }
 }
-
 .btnNegro{
     background-color: #000000;
-}
-
-.textoContacto{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
 }
 
 .lineaContacto {
@@ -633,11 +633,6 @@ input, textarea {
     max-width: 60px;
     margin: 20px 0;
 }
-
-.alinearRedes {
-    margin-left: 26px;
-}
-
 
 /*--FOOTER--
 footer {
@@ -676,10 +671,6 @@ footer p{
 .contenedorRedes{
     display: flex;
     flex-direction: row;
-}
-
-.contenedorRedes a{
-    text-align: left;
 }
 
 .redes img{
@@ -721,4 +712,8 @@ footer p{
     height: 2px;
     max-width: 60px;
     margin: 20px 0;
+}
+
+.colorCopyright{
+    color: #a1a1a1;
 }

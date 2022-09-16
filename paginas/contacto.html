@@ -29,6 +29,7 @@
   </head>
   <!--BODY-->
   <body>
+
     <!--NAVEGADOR
     <header class="fondoNavegador">
       <section class="fondoNavegador__navegador">
@@ -77,6 +78,7 @@
       <div class="imagenContacto">
       </div>
     </main>
+
     <!--MENSAJE
     <section class="contenedorMC">
       <div class="contenedorMensaje">
@@ -112,47 +114,48 @@
     </section>-->
 
     <!--CONTACTO DE BOOTSTRAP-->
-    <section class="container-fluid ">
-      <div class="row">
-    <article class="col-md-6">
+    <section class="container-fluid">
+      <div class="d-flex justify-content-around">
+    <article class="col-md-4">
       <h2 class="h3 mt-4 mb-4">Dejanos tu mensaje</h2>
       <div class="lineaContacto"></div>
       <form class="row g-3">
       <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="inputName4">
+        <label for="inputName4" class="form-label">Nombre</label>
+        <input type="text" class="form-control shadow-none border border-dark" id="inputName4">
       </div>
       <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Apellido</label>
-        <input type="text" class="form-control" id="inputLastName4">
+        <label for="inputLastName4" class="form-label">Apellido</label>
+        <input type="text" class="form-control shadow-none border border-dark" id="inputLastName4">
       </div>
       <div class="col-md-12">
-        <label for="inputCity" class="form-label">Correo</label>
-        <input type="email" class="form-control" id="inputEmail4">
+        <label for="inputEmail4" class="form-label">Correo</label>
+        <input type="email" class="form-control shadow-none border border-dark" id="inputEmail4">
       </div>
-      <div class="form-floating">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-        <label for="floatingTextarea2">Mensaje</label>
+      <div class="form">
+        <label for="Textarea">Mensaje</label>
+        <textarea class="form-control shadow-none border border-dark text-body" id="Textarea" style="height: 100px"></textarea>
       </div>
       <div class="col-12">
         <button type="submit" class="btn btn-dark btnNegro">Enviar</button>
       </div>
     </form></article>
     <!--REDES-->
-    <article class="col-md-6 mt-mobile">
-      <h2 class="h3 mt-4 mb-4 alinearRedes">Contacto</h2>
-      <div class="lineaContacto alinearRedes"></div>
-      <ul class="textoContacto" type="none">
-      <li><strong>Correo:</strong> naturaldeco@gmail.com</li>
-      <li><strong>Whatsapp:</strong> +54 9 341 0053</li>
-      <li><strong>Facebook:</strong> @naturaldeco.r</li>
-      <li><strong>Instagram:</strong> @naturaldeco.r</li>
-      <li><strong>Dirección:</strong> Rosario, Santa Fe</li>
-      </ul></article>
+    <article class="col-md-4 mt-mobile">
+      <h2 class="h3 mt-4 mb-4">Nosotros</h2>
+      <div class="lineaContacto"></div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate amet dicta ullam. Repellendus earum ea quis, aliquam vitae blanditiis illo dolor repellat est doloremque?</p>
+      <h2 class="h3 mt-4 mb-4">Contacto</h2>
+      <div class="lineaContacto"></div>
+      <p><strong>Correo:</strong> naturaldeco@gmail.com</p>
+      <p><strong>Whatsapp:</strong> +54 9 341 0053</p>
+      <p><strong>Facebook:</strong> @naturaldeco.r</p>
+      <p><strong>Instagram:</strong> @naturaldeco.r</p>
+    </article>
     </div>
   </section>
 </div>
-
+<!--MAPA-->
 <div><iframe class="mt-4 mb-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107134.74394277496!2d-60.76667993955604!3d-32.95204570923127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1663276336018!5m2!1ses!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     <!--FOOTER
     <footer>
@@ -224,10 +227,10 @@
     <!-- TERMINA Grid container -->
     <div class="lineaFooter"></div>
     <!--INICIA Copyright-->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      Copyright © 2020 Naturaldeco
-    </div>
-    <!--TERMINA Copyright -->
+  <div class="text-center p-3 colorCopyright" style="background-color: rgba(0, 0, 0, 0.2);">
+    Copyright © 2020 Naturaldeco - Velas y Cerámica
+  </div>
+  <!--TERMINA Copyright -->
   
   </footer>
   <!-- TERMINA Footer -->
