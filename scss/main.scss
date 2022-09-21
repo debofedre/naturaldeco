@@ -1,3 +1,5 @@
+@import "variables";
+
 /*MARGIN RESET*/
 *{
     margin: 0;
@@ -17,8 +19,9 @@ body{
 /*Navegador Bootstrap*/
 
 .navbar{
-    background-color: rgb(0, 0, 0);
+    background-color: $colorPrincipal;
 }
+
 .nav-item a{
     color: #ffffff;
 }
@@ -40,28 +43,25 @@ body{
     text-align: left;
     top: 20%;
     margin-right: 40%;
+    h2{ /*título del banner 2 y 3*/
+        font-size: xx-large;
+        margin: 7% auto 1% auto;
     }
-
-/*título del banner 2 y 3*/
-.captionLeft h2{
-    font-size: xx-large;
-    margin: 7% auto 1% auto;
-}
+    }
 
 /*Boton de "Ver productos" del banner*/
 .verProductos{
     text-decoration: none;
     color: #ffffff;
-    background-color: #000000;
+    background-color: $colorPrincipal;
     font-size: large;
     padding: 8px;
     transition: all 0.2s ease-in-out;
-    border-radius: 5px;;
-}
-
-.verProductos:hover {
-    background-color: #00000088;
-    color: #ffffff;
+    border-radius: 5px;
+    &:hover{
+        background-color: #00000088;
+        color: #ffffff;
+    }
 }
 
 /*Nuestras líneas*/
@@ -73,7 +73,7 @@ body{
 
 /*Línea decorativa debajo de "Nuestras líneas"*/
 .lineaIndex {
-    border-top: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid #000000;
     height: 2px;
     max-width: 100px;
     padding: 0;
@@ -86,7 +86,7 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    z-index: -1; /*PORQUE EL NAV ME QUEDABA ABAJO*/
+    z-index: -1; /*PORQUE EL NAV ME QUEDABA ABAJO  DE LAS IMG*/
 }
 
 /*Contenedor de las imagenes del index*/
@@ -98,25 +98,21 @@ body{
     padding: 1%;
     background-color: #ffffff15;
     transition: 1s;
-}
-
-.productoContenedorIndex:hover{
-    box-shadow: 0 0 10px #0000003d;
-}
-
-.productoContenedorIndex img{
-    width: 100%;
+    &:hover{
+        box-shadow: 0 0 10px #0000003d;
+    }
+    img{
+        width: 100%;
     height: 100%;
     transition: 3s;
     object-fit: cover; /*PARA QUE NO SE DEFORME LA IMAGEN*/
-}
-
-.productoContenedorIndex img:hover{
-    transform: scale(1.2);
-}
-
-.productoContenedorIndex a{
-    text-decoration: none;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    a{
+        text-decoration: none;
+    }
 }
 
 /*Contenedor de todas las imagenes*/
@@ -128,10 +124,21 @@ body{
     padding: 1%;
     background-color: #ffffff15;
     transition: 1s;
-}
-
-.productoContenedor:hover{
-    box-shadow: 0 0 10px #0000003d;
+    &:hover{
+        box-shadow: 0 0 10px #0000003d;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        transition: 3s;
+        object-fit: cover;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    a{
+        text-decoration: none;
+    }
 }
 
 .imagenContenedor{
@@ -141,36 +148,18 @@ body{
     overflow: hidden;
 }
 
-.productoContenedor img{
-    width: 100%;
-    height: 100%;
-    transition: 3s;
-    object-fit: cover;
-}
-
-.productoContenedor img:hover{
-    transform: scale(1.2);
-}
-
-.productoContenedor a{
-    text-decoration: none;
-}
-
 .textoProducto{
     display: flex;
     flex-direction: column;
     font-size:medium;
     color: #000000;
     padding: 3px 0;
-}
-
-/*Texto de la tarjeta más unido*/
-.textoProducto p{
-    margin-bottom: 5px;
-}
-
-.textoProducto:visited{
-    color: #000000;
+    p{ /*Texto de la tarjeta más unido*/
+        margin-bottom: 5px;
+    }
+    &:visited{
+        color: #000000;
+    }
 }
 
 /*---MOBILE RESPONSIVE DESIGN PRODUCTOS---*/
@@ -318,10 +307,9 @@ body{
     background-position: center center;
     height: 450px; /*AFECTO EL TAMAñO DE TODAS LAS IMG (no se por qué, pero mejor)*/
     transition: 1s;
-}
-
-.imagenSoja:hover{
-    filter: grayscale(90%);
+    &:hover{
+        filter: grayscale(90%);
+    }
 }
 
 /*Consejos img*/
@@ -331,10 +319,9 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     transition: 1s;
-}
-
-.imagenConsejos:hover{
-    filter: grayscale(90%);
+    &:hover{
+        filter: grayscale(90%);
+    }
 }
 
 /*Terapia img*/
@@ -344,10 +331,9 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     transition: 1s;
-}
-
-.imagenTerapia:hover{
-    filter: grayscale(90%);
+    &:hover{
+        filter: grayscale(90%);
+    }
 }
 
 /*Refill img*/
@@ -357,10 +343,9 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     transition: 1s;
-}
-
-.imagenRefill:hover{
-    filter: grayscale(90%);
+    &:hover{
+        filter: grayscale(90%);
+    }
 }
 
 /*---TABLET RESPONSIVE DESIGN INFORMACIÓN---*/
@@ -446,8 +431,9 @@ body{
         flex-direction: column;
     }
 }
+
 .btnNegro{
-    background-color: #000000;
+    background-color:  $colorPrincipal;
 }
 
 .lineaContacto {
@@ -466,12 +452,11 @@ body{
 .redes img{
     width: 40px;
     height: 40px; 
-    margin-right: 10px; 
+    margin-right: 10px;
     transition: all 0.2s ease-in-out;
-}
-
-.redes img:hover{
-    transform: scale(0.8);
+    &:hover{
+        transform: scale(0.8);
+    }
 }
 
 .list-unstyled li{
@@ -503,9 +488,9 @@ body{
 
 .colorCopyright{
     color: #a1a1a1;
-    background-color: #000000;
+    background-color: $colorPrincipal;
 }
 
 .colorFooter{
-    background-color: #000000;
+    background-color: $colorPrincipal;
 }

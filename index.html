@@ -5,58 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>naturaldeco</title>
-    <!--FAVICON-->
+
+    <!--Favicon-->
     <link
       rel="shortcut icon"
       href="multimedia/natural.png"
       type="image/x-icon"
     />
 
-    <!--FONT-->
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap"
       rel="stylesheet"
     />
-    <!--BOOTSTRAP ICONS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <!--CSS-->
-    <link rel="stylesheet" href="css/estilos.css" />
-  </head>
-  <body>
-    
-    <!--NAVEGADOR-->
-    <!--<header class="fondoNavegador">
-      <section class="fondoNavegador__navegador">
-        <h1>naturaldeco</h1>
-        <nav>
-          <ul class="listaNavegador">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="paginas/informacion.html">Información</a></li>
-            <li><a href="paginas/velas.html">Glam & Capri</a></li>
-            <li><a href="paginas/ceramica.html">Cerámica</a></li>
-            <li><a href="paginas/contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </section>
-    </header>-->
 
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-black">
+    <!--Bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!--Navegador Bootstrap-->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./multimedia/logonaturaldeco.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#"
+          ><img src="./multimedia/logonaturaldeco.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./paginas/informacion.html">Información</a>
+              <a class="nav-link" href="./paginas/informacion.html"
+                >Información</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./paginas/velas.html">Glam & Capri</a>
@@ -72,62 +84,105 @@
       </div>
     </nav>
 
-    <!--BANNER
-    <main class="banner">
-      <div class="imagenBanner">
-        <div class="tituloBanner">
-          <h2 id="inicio">VELAS DE SOJA</h2>
-          <h3>Decoración de interiores</h3>
-        </div>
-        <a href="#productos" class="verProductos">Ver productos</a>
-      </div>
-    </main>-->
-
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <!--Banner Bootstrap-->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false"
+    >
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
       <div class="carousel-inner align-middle">
         <div class="carousel-item active">
-          <img src="./multimedia/velabanner333.jpg" class="d-block w-100" alt="vela y decoración">
+          <img
+            src="./multimedia/velabanner333.jpg"
+            class="d-block w-100"
+            alt="vela y decoración"
+          />
           <div class="carousel-caption d-none d-md-block captionCenter">
-            <h3><strong>Velas de soja</strong></h3>
+            <h1><strong>Velas de soja</strong></h1>
             <p>Decoracióng de interiores</p>
             <a href="#productos" class="verProductos">Ver productos</a>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./multimedia/velabanner33.jpg" class="d-block w-100" alt="vela y cartas">
+          <img
+            src="./multimedia/velabanner33.jpg"
+            class="d-block w-100"
+            alt="vela y cartas"
+          />
           <div class="carousel-caption d-none d-md-block captionLeft">
-            <h3>Glam & Capri</h3>
-            <p>Además de ser decorativas, nuestras velas aromatizan y aportan las propiedades de los aceites esenciales que utilizamos.</p>
-            <a href="./paginas/velas.html" class="verProductos">Ver productos</a>
+            <h2>Glam & Capri</h2>
+            <p>
+              Además de ser decorativas, nuestras velas aromatizan y aportan las
+              propiedades de los aceites esenciales que utilizamos.
+            </p>
+            <a href="./paginas/velas.html" class="verProductos"
+              >Ver productos</a
+            >
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./multimedia/velabanner222.jpg" class="d-block w-100" alt="vela encendida">
+          <img
+            src="./multimedia/velabanner222.jpg"
+            class="d-block w-100"
+            alt="vela encendida"
+          />
           <div class="carousel-caption d-none d-md-block captionLeft">
-            <h3>Cerámica artesanal</h3>
-            <p>Velas aromáticas de cera de soja en recipientes  reutilizables de cerámica artesanal.</p>
+            <h2>Cerámica artesanal</h2>
+            <p>
+              Velas aromáticas de cera de soja en recipientes reutilizables de
+              cerámica artesanal.
+            </p>
             <p>Cada pieza es única e irrepetible.</p>
-            <a href="./paginas/ceramica.html" class="verProductos">Ver productos</a>
+            <a href="./paginas/ceramica.html" class="verProductos"
+              >Ver productos</a
+            >
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 
-    <!--PRODUCTOS-->
-    <h3 class="nuestosProductos" id="productos">Nuestras líneas</h3>
+    <!--Tarjetas de líneas-->
+    <h3 class="nuestrasLineas" id="productos">Nuestras líneas</h3>
     <div class="lineaIndex"></div>
     <section class="productos">
       <div class="productoContenedorIndex">
@@ -168,86 +223,62 @@
       </div>
     </section>
 
-    <!--FOOTER
-    <footer>
-      <p>Nuestras redes:</p>
-
-      <div class="redes">
-        <a class="redes" href="#" target="_blank">
-          <img alt="Instagram" src="multimedia/redes/instagram1.png"
-        /></a>
-
-        <a class="redes" href="#" target="_blank">
-          <img alt="Facebook" src="multimedia/redes/facebook1.png"
-        /></a>
-
-        <a class="redes" href="#" target="_blank">
-          <img alt="Whatsapp" src="multimedia/redes/whatsaap1.png"
-        /></a>
-      </div>
-    </footer>-->
-
-    <!-- INICIA Footer -->
-    <footer class="bg-black text-center text-white">
-  
-    <!-- INICIA Grid container -->
-    <div class="container p-4">
-
-    <section>
-
-      <!-- INICIA Grid row-->
-      <div class="row">
-
-        <!--INICIA Grid column 1-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5>Ubicación</h5>
-          <div class="lineasFooter"></div>
-          <p>Rosario, Santa Fe, Argentina</p>
-        </div>
-        <!--TERMINA Grid column 1-->
-
-        <!--INICIA Grid column 2-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5>Redes</h5>
-          <div class="lineasFooter"></div>
-          <div class="contenedorRedes">
-            <a class="redes" href="#" target="_blank">
-              <img alt="Instagram" src="multimedia/redes/instagram1.png"
-            /></a>
-            <a class="redes" href="#" target="_blank">
-              <img alt="Facebook" src="multimedia/redes/facebook1.png"
-            /></a>
+    <!--Footer Bootstrap-->
+    <footer class="colorFooter text-center text-white">
+      <!-- INICIA Grid container -->
+      <div class="container p-4">
+        <section>
+          <!-- INICIA Grid row-->
+          <div class="row">
+            <!--INICIA Grid column 1-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5>Ubicación</h5>
+              <div class="lineasFooter"></div>
+              <p>Rosario, Santa Fe, Argentina</p>
+            </div>
+            <!--TERMINA Grid column 1-->
+            <!--INICIA Grid column 2-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5>Redes</h5>
+              <div class="lineasFooter"></div>
+              <div class="contenedorRedes">
+                <a class="redes" href="#" target="_blank">
+                  <img alt="Instagram" src="multimedia/redes/instagram1.png"
+                /></a>
+                <a class="redes" href="#" target="_blank">
+                  <img alt="Facebook" src="multimedia/redes/facebook1.png"
+                /></a>
+              </div>
+            </div>
+            <!--TERMINA Grid column 2-->
+            <!--INICIA Grid column 3-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5>Contacto</h5>
+              <div class="lineasFooter"></div>
+              <ul class="list-unstyled mb-0">
+                <li><strong>Correo:</strong> naturaldeco@gmail.com</li>
+                <li><strong>Whatsaap:</strong> +54 9 341 0053</li>
+              </ul>
+            </div>
+            <!--TERMINA Grid column 3-->
           </div>
-        </div>
-        <!--TERMINA Grid column 2-->
-
-        <!--INICIA Grid column 3-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5>Contacto</h5>
-          <div class="lineasFooter"></div>
-          <ul class="list-unstyled mb-0">
-            <li><strong>Correo:</strong> naturaldeco@gmail.com</li>
-            <li><strong>Whatsaap:</strong> +54 9 341 0053</li>
-          </ul>
-        </div>
-        <!--TERMINA Grid column 3-->
+          <!--TERMINA Grid row-->
+        </section>
       </div>
-      <!--TERMINA Grid row-->
-    </section>
-  </div>
-  <!-- TERMINA Grid container -->
-  <div class="lineaFooter"></div>
-  <!--INICIA Copyright-->
-  <div class="text-center p-3 colorCopyright" style="background-color: rgba(0, 0, 0, 0.2);">
-    Copyright © 2020 Naturaldeco - Velas y Cerámica
-  </div>
-  <!--TERMINA Copyright -->
-
-</footer>
-<!-- TERMINA Footer -->
-
+      <!-- TERMINA Grid container -->
+      <div class="lineaFooter"></div>
+      <!--INICIA Copyright-->
+      <div
+        class="text-center p-3 colorCopyright">
+        Copyright © 2020 Naturaldeco - Velas y Cerámica
+      </div>
+      <!--TERMINA Copyright -->
+    </footer>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

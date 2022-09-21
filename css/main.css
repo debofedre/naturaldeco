@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/*MARGIN RESET*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Scroll*/
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto Slab', serif; }
+
+/*Navegador Bootstrap*/
+.navbar {
+  background-color: #000000; }
+
+.nav-item a {
+  color: #ffffff; }
+
+.tituloNav {
+  color: #ffffff; }
+
+/*Banner bootstrap*/
+/*Centraliza el texto del banner 1*/
+.captionCenter {
+  top: 30%;
+  text-align: center; }
+
+/*Mueve a la izquierda el texto del banner 2 y 3*/
+.captionLeft {
+  text-align: left;
+  top: 20%;
+  margin-right: 40%; }
+  .captionLeft h2 {
+    /*título del banner 2 y 3*/
+    font-size: xx-large;
+    margin: 7% auto 1% auto; }
+
+/*Boton de "Ver productos" del banner*/
+.verProductos {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+  font-size: large;
+  padding: 8px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px; }
+  .verProductos:hover {
+    background-color: #00000088;
+    color: #ffffff; }
+
+/*Nuestras líneas*/
+.nuestrasLineas {
+  font-size: xx-large;
+  margin: 7% auto 1% auto;
+  text-align: center; }
+
+/*Línea decorativa debajo de "Nuestras líneas"*/
+.lineaIndex {
+  border-top: 1px solid #000000;
+  height: 2px;
+  max-width: 100px;
+  padding: 0;
+  margin: 20px auto 0 auto; }
+
+/*Poductos*/
+.productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  z-index: -1;
+  /*PORQUE EL NAV ME QUEDABA ABAJO  DE LAS IMG*/ }
+
+/*Contenedor de las imagenes del index*/
+.productoContenedorIndex {
+  width: 300px;
+  height: 400px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 1%;
+  background-color: #ffffff15;
+  transition: 1s; }
+  .productoContenedorIndex:hover {
+    box-shadow: 0 0 10px #0000003d; }
+  .productoContenedorIndex img {
+    width: 100%;
+    height: 100%;
+    transition: 3s;
+    object-fit: cover;
+    /*PARA QUE NO SE DEFORME LA IMAGEN*/ }
+    .productoContenedorIndex img:hover {
+      transform: scale(1.2); }
+  .productoContenedorIndex a {
+    text-decoration: none; }
+
+/*Contenedor de todas las imagenes*/
+.productoContenedor {
+  width: 300px;
+  height: 330px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 1%;
+  background-color: #ffffff15;
+  transition: 1s; }
+  .productoContenedor:hover {
+    box-shadow: 0 0 10px #0000003d; }
+  .productoContenedor img {
+    width: 100%;
+    height: 100%;
+    transition: 3s;
+    object-fit: cover; }
+    .productoContenedor img:hover {
+      transform: scale(1.2); }
+  .productoContenedor a {
+    text-decoration: none; }
+
+.imagenContenedor {
+  width: 100%;
+  height: 85%;
+  transition: 3s;
+  overflow: hidden; }
+
+.textoProducto {
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  color: #000000;
+  padding: 3px 0; }
+  .textoProducto p {
+    /*Texto de la tarjeta más unido*/
+    margin-bottom: 5px; }
+  .textoProducto:visited {
+    color: #000000; }
+
+/*---MOBILE RESPONSIVE DESIGN PRODUCTOS---*/
+@media screen and (max-width: 500px) {
+  .productos {
+    flex-direction: column;
+    align-content: center; } }
+
+/*Información*/
+.contenedorGrid {
+  width: 70%;
+  margin: 5% auto;
+  background-repeat: round;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10fr 10fr 10fr 10fr;
+  grid-template-areas: "infoSoja imagenSoja" "imagenConsejos infoConsejos" "infoTerapia imagenTerapia" "imagenRefill infoRefill";
+  justify-content: center;
+  align-content: center;
+  background-color: #ffffff;
+  gap: 30px; }
+
+/*Areas de grid especificadas para que las ordene*/
+.infoSoja {
+  grid-area: infoSoja; }
+
+.imagenSoja {
+  grid-area: imagenSoja; }
+
+.imagenConsejos {
+  grid-area: imagenConsejos; }
+
+.infoConsejos {
+  grid-area: infoConsejos; }
+
+.infoTerapia {
+  grid-area: infoTerapia; }
+
+.imagenTerapia {
+  grid-area: imagenTerapia; }
+
+.imagenRefill {
+  grid-area: imagenRefill; }
+
+.infoRefill {
+  grid-area: infoRefill; }
+
+/*Soja texto*/
+.infoSoja {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.tituloSoja {
+  text-align: center;
+  color: #000000; }
+
+.contenedorSoja {
+  width: 70%; }
+
+/*Consejos texto*/
+.infoConsejos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.tituloConsejos {
+  text-align: left;
+  color: #000000; }
+
+.contenedorConsejos {
+  width: 70%; }
+
+/*Terapia texto*/
+.infoTerapia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.tituloTerapia {
+  text-align: justify;
+  color: #000000; }
+
+.contenedorTerapia {
+  width: 70%; }
+
+.listaTerapia {
+  text-align: justify; }
+
+/*Refill texto*/
+.infoRefill {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.tituloRefill {
+  text-align: justify;
+  color: #000000; }
+
+.contenedorRefill {
+  width: 70%; }
+
+.listaRefill {
+  text-align: justify; }
+
+/*Soja img*/
+.imagenSoja {
+  background-image: url(../multimedia/imagensoja.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 450px;
+  /*AFECTO EL TAMAñO DE TODAS LAS IMG (no se por qué, pero mejor)*/
+  transition: 1s; }
+  .imagenSoja:hover {
+    filter: grayscale(90%); }
+
+/*Consejos img*/
+.imagenConsejos {
+  background-image: url(../multimedia/imagenconsejos.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 1s; }
+  .imagenConsejos:hover {
+    filter: grayscale(90%); }
+
+/*Terapia img*/
+.imagenTerapia {
+  background-image: url(../multimedia/imagenterapia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 1s; }
+  .imagenTerapia:hover {
+    filter: grayscale(90%); }
+
+/*Refill img*/
+.imagenRefill {
+  background-image: url(../multimedia/imagenrefill.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 1s; }
+  .imagenRefill:hover {
+    filter: grayscale(90%); }
+
+/*---TABLET RESPONSIVE DESIGN INFORMACIÓN---*/
+@media screen and (max-width: 768px) {
+  .contenedorGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+    grid-template-areas: "infoSoja" "imagenSoja" "infoConsejos" "imagenConsejos" "infoTerapia" "imagenTerapia" "infoRefill" "imagenRefill"; } }
+
+/*---MOBILE RESPONSIVE DESIGN INFORMACIÓN---*/
+@media screen and (max-width: 500px) {
+  .contenedorGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr 3fr;
+    grid-template-areas: "infoSoja" "infoConsejos" "infoTerapia" "infoRefill"; }
+  .imagenSoja {
+    display: none; }
+  .imagenConsejos {
+    display: none; }
+  .imagenTerapia {
+    display: none; }
+  .imagenRefill {
+    display: none; } }
+
+/*Contacto bootstrap*/
+/*Banner contacto*/
+.bannerContacto {
+  height: 500px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 10px 5px 5px  #0f0f0e8a;
+  margin-bottom: 40px;
+  overflow: hidden; }
+
+.imagenContacto {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom bottom;
+  background-image: url(../multimedia/velacontacto.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+@media (max-width: 570px) {
+  /*sperapar el mapa del form*/
+  .mt-mobile {
+    margin-top: 3rem; }
+  /*columna*/
+  .d-flex {
+    display: flex;
+    flex-direction: column; } }
+
+.btnNegro {
+  background-color: #000000; }
+
+.lineaContacto {
+  border-top: 1px solid black;
+  height: 2px;
+  max-width: 60px;
+  margin: 20px 0; }
+
+/*Footer bootstrap*/
+.contenedorRedes {
+  display: flex;
+  flex-direction: row; }
+
+.redes img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out; }
+  .redes img:hover {
+    transform: scale(0.8); }
+
+.list-unstyled li {
+  text-align: justify; }
+
+.col-lg-4 h5 {
+  text-align: justify; }
+
+.col-lg-4 p {
+  text-align: justify; }
+
+.lineaFooter {
+  border-top: 1px solid #fdfdfd;
+  height: 2px;
+  max-width: 100%;
+  padding: 0;
+  margin: 20px auto 0 auto; }
+
+.lineasFooter {
+  border-top: 1px solid white;
+  height: 2px;
+  max-width: 60px;
+  margin: 20px 0; }
+
+.colorCopyright {
+  color: #a1a1a1;
+  background-color: #000000; }
+
+.colorFooter {
+  background-color: #000000; }
