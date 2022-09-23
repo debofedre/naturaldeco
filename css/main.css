@@ -27,6 +27,10 @@ body {
 .captionCenter {
   top: 30%;
   text-align: center; }
+  .captionCenter h1 {
+    text-shadow: 1px 1px 2px black; }
+  .captionCenter p {
+    text-shadow: 1px 1px 2px black; }
 
 /*Mueve a la izquierda el texto del banner 2 y 3*/
 .captionLeft {
@@ -36,10 +40,14 @@ body {
   .captionLeft h2 {
     /*título del banner 2 y 3*/
     font-size: xx-large;
-    padding-top: 1.5%; }
+    padding-top: 1.5%;
+    text-shadow: 1px 1px 2px black; }
+  .captionLeft p {
+    text-shadow: 1px 1px 2px black; }
 
 /*Boton de "Ver productos" del banner*/
 .verProductos {
+  text-shadow: 1px 1px 2px black;
   text-decoration: none;
   color: #ffffff;
   background-color: #000000;
@@ -63,7 +71,8 @@ body {
     color: #ffffff;
     text-align: center;
     padding-top: 90px;
-    text-size-adjust: 30px; }
+    text-size-adjust: 30px;
+    text-shadow: 1px 1px 2px black; }
   .imagenFija p {
     padding-top: 0; }
   .imagenFija .lineaFija {
@@ -123,15 +132,16 @@ body {
 
 /*Contenedor de las imagenes del index*/
 .productoContenedorIndex {
-  width: 320px;
-  height: 450px;
+  width: 420px;
+  height: 410px;
   margin-top: 3%;
   margin-bottom: 3%;
   padding: 1%;
   background-color: #ffffff15;
-  transition: 1s; }
+  transition: 1s;
+  border-radius: 5px; }
   .productoContenedorIndex:hover {
-    box-shadow: 0 0 10px #0000003d; }
+    box-shadow: 0 0 15px #0000003d; }
   .productoContenedorIndex img {
     width: 100%;
     height: 100%;
@@ -151,9 +161,10 @@ body {
   margin-bottom: 3%;
   padding: 1%;
   background-color: #ffffff15;
-  transition: 1s; }
+  transition: 1s;
+  border-radius: 5px; }
   .productoContenedor:hover {
-    box-shadow: 0 0 10px #0000003d; }
+    box-shadow: 0 0 15px #0000003d; }
   .productoContenedor img {
     width: 100%;
     height: 100%;
