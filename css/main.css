@@ -22,7 +22,7 @@ body {
 .tituloNav {
   color: #ffffff; }
 
-/*Banner bootstrap*/
+/*Banner bootstrap index*/
 /*Centraliza el texto del banner 1*/
 .captionCenter {
   top: 30%;
@@ -50,6 +50,53 @@ body {
   .verProductos:hover {
     background-color: #00000088;
     color: #ffffff; }
+
+/*Imagen fija*/
+.imagenFija {
+  background-image: url(../multimedia/banner/otono.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px; }
+  .imagenFija h3, .imagenFija p {
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 90px;
+    text-size-adjust: 30px; }
+  .imagenFija p {
+    padding-top: 0; }
+  .imagenFija .lineaFija {
+    border-top: 1px solid #ffffff;
+    height: 2px;
+    max-width: 150px;
+    padding: 0;
+    margin: 20px auto 0 auto; }
+
+/*Esencias*/
+.esenciasTexto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .esenciasTexto div img {
+    height: 40px;
+    width: 40px; }
+
+.esenciaIcono {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .esenciaIcono img {
+    margin-right: 10px; }
+
+/*MOBILE RESPONSIVE DESIGN ESENCIAS*/
+@media screen and (max-width: 500px) {
+  .esenciasTexto {
+    flex-direction: column;
+    align-content: center; } }
 
 /*Nuestras líneas*/
 .nuestrasLineas {
@@ -326,7 +373,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-attachment: fixed;
+  /*Efecto de imagen fija*/
+  padding-top: 80px; }
 
 @media (max-width: 570px) {
   /*sperapar el mapa del form*/
@@ -357,6 +407,18 @@ body {
     height: 60px; }
 
 /*Footer bootstrap*/
+footer {
+  background-color: #000000;
+  padding-top: 30px;
+  padding-bottom: 20px; }
+
+.footerFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #ffffff; }
+
 .contenedorRedes {
   display: flex;
   flex-direction: row; }
@@ -369,21 +431,10 @@ body {
   .redes img:hover {
     transform: scale(0.8); }
 
-.list-unstyled li {
-  text-align: justify; }
-
-.col-lg-4 h5 {
-  text-align: justify; }
-
-.col-lg-4 p {
-  text-align: justify; }
-
-.lineaFooter {
-  border-top: 1px solid #fdfdfd;
-  height: 2px;
-  max-width: 100%;
-  padding: 0;
-  margin: 20px auto 0 auto; }
+.copyright {
+  color: #a1a1a1;
+  text-align: center;
+  padding-top: 10px; }
 
 .lineasFooter {
   border-top: 1px solid white;
@@ -391,9 +442,27 @@ body {
   max-width: 60px;
   margin: 20px 0; }
 
-.colorCopyright {
-  color: #a1a1a1;
-  background-color: #000000; }
+.lineaFooter {
+  border-top: 1px solid #fdfdfd;
+  height: 2px;
+  max-width: 100%;
+  padding: 0;
+  margin: 20px auto 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
-.colorFooter {
-  background-color: #000000; }
+/*---MOBILE RESPONSIVE DESIGN FOOTER---*/
+@media screen and (max-width: 600px) {
+  .footerFlex {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+  .lineasFooter {
+    display: none; }
+  .ubicacionFooter {
+    margin-top: 20px; }
+  .redesFooter {
+    margin-top: 20px; }
+  .contactoFooter {
+    margin-top: 20px; } }
