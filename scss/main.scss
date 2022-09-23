@@ -30,7 +30,16 @@ body{
 }
 
 /*Banner bootstrap index*/
-
+.carousel-item{
+    width: 100%;
+    height: 500px;
+    img{
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
 /*Centraliza el texto del banner 1*/
 .captionCenter{
     top: 30%;
@@ -478,7 +487,6 @@ body{
     width: 100%;
     background-color: #ffffff;
     box-shadow: 10px 5px 5px  #0f0f0e8a;
-    margin-bottom: 40px;
     overflow: hidden;
 }
 
@@ -493,8 +501,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-attachment: fixed; /*Efecto de imagen fija*/
-    padding-top: 80px;
+    object-fit: cover;
 }
 
 @media (max-width: 570px) {
