@@ -1,0 +1,88 @@
+/*MOBILE RESPONSIVE DESIGN ESENCIAS*/
+@media screen and (max-width: 500px) {
+
+    .esenciasTexto{
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+/*---MOBILE RESPONSIVE DESIGN PRODUCTOS---*/
+@media screen and (max-width: 500px) {
+
+    .productos{
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+/*---TABLET RESPONSIVE DESIGN INFORMACIÓN---*/
+@media screen and (max-width: 768px) {
+    .contenedorGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+        grid-template-areas:
+        "infoSoja"
+        "imagenSoja"
+        "infoConsejos"
+        "imagenConsejos"
+        "infoTerapia"
+        "imagenTerapia"
+        "infoRefill"
+        "imagenRefill";
+    } 
+}
+
+/*---MOBILE RESPONSIVE DESIGN INFORMACIÓN---*/
+@media screen and (max-width: 500px) {
+    .contenedorGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 3fr 3fr 3fr;
+        grid-template-areas:
+        "infoSoja"
+        "infoConsejos"
+        "infoTerapia"
+        "infoRefill";
+    }
+
+    .imagenSoja{
+        display: none;
+    }
+    
+    .imagenConsejos{
+        display: none;
+        }
+    
+    .imagenTerapia{
+        display: none;
+        }
+    
+    .imagenRefill{
+        display: none;
+        } 
+}
+
+/*---MOBILE RESPONSIVE DESIGN FOOTER---*/
+@media screen and (max-width: 600px) {
+    .footerFlex{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center
+    }
+    .lineasFooter{
+        display: none;
+    }
+
+    .ubicacionFooter{
+        margin-top: 20px;
+    }
+
+    .redesFooter{
+        margin-top: 20px;
+    }
+
+    .contactoFooter{
+        margin-top: 20px;
+    }
+}

@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables"; /*Debe ir al principio siempre*/
 
 /*MARGIN RESET*/
 *{
@@ -40,6 +40,7 @@ body{
         height: 100%;
     }
 }
+
 /*Centraliza el texto del banner 1*/
 .captionCenter{
     top: 30%;
@@ -135,15 +136,6 @@ body{
     flex-wrap: wrap;
     img{
         margin-right: 10px;
-    }
-}
-
-/*MOBILE RESPONSIVE DESIGN ESENCIAS*/
-@media screen and (max-width: 500px) {
-
-    .esenciasTexto{
-        flex-direction: column;
-        align-content: center;
     }
 }
 
@@ -244,15 +236,6 @@ body{
     }
     &:visited{
         color: #000000;
-    }
-}
-
-/*---MOBILE RESPONSIVE DESIGN PRODUCTOS---*/
-@media screen and (max-width: 500px) {
-
-    .productos{
-        flex-direction: column;
-        align-content: center;
     }
 }
 
@@ -433,52 +416,6 @@ body{
     }
 }
 
-/*---TABLET RESPONSIVE DESIGN INFORMACIÓN---*/
-@media screen and (max-width: 768px) {
-    .contenedorGrid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
-        grid-template-areas:
-        "infoSoja"
-        "imagenSoja"
-        "infoConsejos"
-        "imagenConsejos"
-        "infoTerapia"
-        "imagenTerapia"
-        "infoRefill"
-        "imagenRefill";
-    } 
-}
-
-/*---MOBILE RESPONSIVE DESIGN INFORMACIÓN---*/
-@media screen and (max-width: 500px) {
-    .contenedorGrid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 3fr 3fr 3fr 3fr;
-        grid-template-areas:
-        "infoSoja"
-        "infoConsejos"
-        "infoTerapia"
-        "infoRefill";
-    }
-
-    .imagenSoja{
-        display: none;
-    }
-    
-    .imagenConsejos{
-        display: none;
-        }
-    
-    .imagenTerapia{
-        display: none;
-        }
-    
-    .imagenRefill{
-        display: none;
-        } 
-}
-
 /*Contacto bootstrap*/
 
 /*Banner contacto*/
@@ -595,27 +532,4 @@ footer{
     padding-bottom: 10px;
 }
 
-/*---MOBILE RESPONSIVE DESIGN FOOTER---*/
-@media screen and (max-width: 600px) {
-    .footerFlex{
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center
-    }
-    .lineasFooter{
-        display: none;
-    }
-
-    .ubicacionFooter{
-        margin-top: 20px;
-    }
-
-    .redesFooter{
-        margin-top: 20px;
-    }
-
-    .contactoFooter{
-        margin-top: 20px;
-    }
-}
+@import "media"; /*Debe ir al final*/
