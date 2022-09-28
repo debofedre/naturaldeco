@@ -1,4 +1,14 @@
+/*MOBILE RESPONSIVE DESIGN BANNER INDEX*/
+
+@media screen and (max-width: 500px) {
+
+    .carousel{
+        display: none;
+    }
+}
+
 /*MOBILE RESPONSIVE DESIGN ESENCIAS*/
+
 @media screen and (max-width: 500px) {
 
     .esenciasTexto{
@@ -37,29 +47,63 @@
 @media screen and (max-width: 500px) {
     .contenedorGrid{
         grid-template-columns: 1fr;
-        grid-template-rows: 3fr 3fr 3fr 3fr;
+        grid-template-rows: 1.50fr 1.30fr 3.30fr 1.30fr 1.30fr 1.30fr 1.80fr 1.30fr;
+        gap: 0;
         grid-template-areas:
         "infoSoja"
+        "imagenSoja"
         "infoConsejos"
+        "imagenConsejos"
         "infoTerapia"
-        "infoRefill";
+        "imagenTerapia"
+        "infoRefill"
+        "imagenRefill";
     }
 
     .imagenSoja{
-        display: none;
+        height: 100%;
     }
     
     .imagenConsejos{
-        display: none;
+        height: 100%;
         }
     
     .imagenTerapia{
-        display: none;
+        height: 100%;
         }
     
     .imagenRefill{
-        display: none;
+        height: 100%;
         } 
+    
+}
+
+/*---MOBILE RESPONSIVE DESIGN CONTACTO---*/
+
+@media (max-width: 570px) {
+
+    .nosotrosTitulo{
+        padding-top: 3rem;
+    }
+
+    .contactoTitulo{
+        padding-top: 3rem;
+    }
+
+    .containerContacto{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .container-fluid{
+        
+    }
+
+    /*columna*/
+    .d-flex{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /*---MOBILE RESPONSIVE DESIGN FOOTER---*/

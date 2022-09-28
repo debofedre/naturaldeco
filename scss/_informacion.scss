@@ -1,0 +1,176 @@
+/*Información*/
+.contenedorGrid{
+    width: 70%;
+    margin: 5% auto;
+    background-repeat: round;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10fr 10fr 10fr 10fr;
+    grid-template-areas:
+    "infoSoja imagenSoja"
+    "imagenConsejos infoConsejos"
+    "infoTerapia imagenTerapia"
+    "imagenRefill infoRefill";
+    justify-content: center;
+    align-content: center;
+    background-color: #ffffff;
+    gap: 30px;
+}
+
+/*Areas de grid especificadas para que las ordene*/
+.infoSoja {
+    grid-area: infoSoja;
+}
+
+.imagenSoja {
+    grid-area: imagenSoja;
+}
+
+.imagenConsejos {
+    grid-area: imagenConsejos;
+}
+
+.infoConsejos {
+    grid-area: infoConsejos;
+}
+
+.infoTerapia {
+    grid-area: infoTerapia;
+}
+
+.imagenTerapia {
+    grid-area: imagenTerapia;
+}
+
+.imagenRefill {
+    grid-area: imagenRefill;
+}
+
+.infoRefill {
+    grid-area: infoRefill;
+}
+
+/*Soja texto*/
+.infoSoja{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloSoja{
+    text-align: center;
+    color: #000000;
+}
+
+.contenedorSoja{
+    width: 70%;
+}
+
+/*Consejos texto*/
+.infoConsejos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloConsejos{
+    text-align:left;
+    color: #000000;
+}
+
+.contenedorConsejos{
+    width: 70%;
+}
+
+/*Terapia texto*/
+.infoTerapia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloTerapia{
+    text-align: justify;
+    color: #000000;
+}
+
+.contenedorTerapia{
+    width: 70%;
+}
+
+.listaTerapia{
+    text-align: justify;
+}
+
+/*Refill texto*/
+.infoRefill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloRefill{
+    text-align: justify;
+    color: #000000;
+}
+
+.contenedorRefill{
+    width: 70%;
+}
+
+.listaRefill{
+    text-align: justify;
+}
+
+/*Soja img*/
+.imagenSoja{
+    background-image: url(../multimedia/informacion/imagensoja.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 450px; /*AFECTO EL TAMAñO DE TODAS LAS IMG (no se por qué, pero mejor)*/
+    transition: 1s;
+    &:hover{
+        filter: grayscale(90%);
+    }
+}
+
+/*Consejos img*/
+.imagenConsejos{
+    background-image: url(../multimedia/informacion/imagenconsejos.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 1s;
+    &:hover{
+        filter: grayscale(90%);
+    }
+}
+
+/*Terapia img*/
+.imagenTerapia{
+    background-image: url(../multimedia/informacion/imagenterapia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 1s;
+    &:hover{
+        filter: grayscale(90%);
+    }
+}
+
+/*Refill img*/
+.imagenRefill{
+    background-image: url(../multimedia/informacion/imagenrefill2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 1s;
+    &:hover{
+        filter: grayscale(90%);
+    }
+}
