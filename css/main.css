@@ -23,7 +23,7 @@
   object-fit: cover; }
 
 .btnNegro {
-  background-color: #000000; }
+  background-color: #181f1c; }
 
 .lineaContacto {
   border-top: 1px solid black;
@@ -189,7 +189,7 @@ body {
 
 /*Navegador Bootstrap*/
 .navbar {
-  background-color: #000000; }
+  background-color: #181f1c; }
 
 .nav-item a {
   color: #ffffff; }
@@ -234,7 +234,7 @@ body {
   text-shadow: 1px 1px 2px black;
   text-decoration: none;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #181f1c;
   font-size: large;
   padding: 8px;
   transition: all 0.2s ease-in-out;
@@ -384,7 +384,7 @@ body {
 
 /*Footer bootstrap*/
 footer {
-  background-color: #000000;
+  background-color: #181f1c;
   padding-top: 30px;
   padding-bottom: 20px; }
 
@@ -431,7 +431,7 @@ footer {
 /*Map*/
 /*keys / Values*/
 .map--tilo:hover {
-  background-color: #90B77D;
+  background-color: #c1e46f;
   border-radius: 50%; }
 
 .map--lavanda:hover {
