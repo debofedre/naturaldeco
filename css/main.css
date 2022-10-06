@@ -478,14 +478,21 @@ footer {
 @media screen and (max-width: 500px) {
   .productos {
     flex-direction: column;
-    align-content: center; } }
+    align-content: center;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; } }
 
 /*---MOBILE RESPONSIVE DESIGN LINEAS DEL INDEX y MARGIN DE LA IMAGEN FIJA---*/
 @media screen and (max-width: 500px) {
   .productoContenedorIndex {
+    align-content: center;
     width: 80%;
     height: auto;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; }
   .imagenFija {
     margin-top: 60px; } }
 

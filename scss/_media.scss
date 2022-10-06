@@ -23,6 +23,10 @@
     .productos{
         flex-direction: column;
         align-content: center;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -30,9 +34,12 @@
 @media screen and (max-width: 500px) {
 
     .productoContenedorIndex{
+        align-content: center;
         width: 80%;
         height: auto;
         margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .imagenFija {
         margin-top: 60px;
