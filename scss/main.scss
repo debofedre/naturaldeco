@@ -23,6 +23,13 @@ body{
     background-color: $colorPrincipal;
 }
 
+.navbar-brand{
+    img{
+        width:120px;
+        height: auto;
+    }
+}
+
 .nav-item a{
     color: #ffffff;
 }
@@ -48,10 +55,10 @@ body{
     top: 30%;
     text-align: center;
     h1{
-        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
     }
     p{
-        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
     }
     }
 
@@ -63,10 +70,10 @@ body{
     h2{ /*título del banner 2 y 3*/
         font-size: xx-large;
         padding-top: 1.5%;
-        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
     }
     p{
-        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
     }
     }
 
@@ -81,7 +88,7 @@ body{
     transition: all 0.2s ease-in-out;
     border-radius: 5px;
     &:hover{
-        background-color: #00000088;
+        background-color: #374b42;
         color: #ffffff;
     }
 }
@@ -207,7 +214,7 @@ body{
     }
     img{
         width: 100%;
-        height: 100%;
+        height: auto;
         transition: 3s;
         object-fit: cover;
         &:hover{
@@ -318,9 +325,9 @@ footer{
 /*Map*/
 /*keys / Values*/
 $esencias:(
-    tilo: #c1e46f,
-    lavanda: #898AA6,
-    melissa: #42855B,
+    tilo: #eec77f,
+    lavanda: #afa6d8,
+    melissa: #72a886,
 );
 
 @each $key, $value in $esencias{

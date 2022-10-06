@@ -5,7 +5,7 @@
     height: 500px;
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 10px 5px 5px  #0f0f0e8a;
+    box-shadow: 10px 5px 5px  #181f1cab;
     overflow: hidden;
 }
 
@@ -24,8 +24,19 @@
     object-fit: cover;
 }
 
-.btnNegro{
-    background-color:  $colorPrincipal;
+.btnContacto{
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-decoration: none;
+    color: #ffffff;
+    background-color: $colorPrincipal;
+    padding: 8px 15px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    border: none;
+    &:hover{
+        background-color: #374b42;
+        color: #ffffff;
+    }
 }
 
 .lineaContacto {

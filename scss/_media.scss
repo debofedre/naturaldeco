@@ -26,6 +26,19 @@
     }
 }
 
+/*---MOBILE RESPONSIVE DESIGN LINEAS DEL INDEX y MARGIN DE LA IMAGEN FIJA---*/
+@media screen and (max-width: 500px) {
+
+    .productoContenedorIndex{
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .imagenFija {
+        margin-top: 60px;
+    }
+}
+
 /*---TABLET RESPONSIVE DESIGN INFORMACIÓN---*/
 @media screen and (max-width: 768px) {
     .contenedorGrid{

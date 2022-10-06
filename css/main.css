@@ -6,7 +6,7 @@
   height: 500px;
   width: 100%;
   background-color: #ffffff;
-  box-shadow: 10px 5px 5px  #0f0f0e8a;
+  box-shadow: 10px 5px 5px  #181f1cab;
   overflow: hidden; }
 
 .imagenContacto {
@@ -23,8 +23,18 @@
   justify-content: center;
   object-fit: cover; }
 
-.btnNegro {
-  background-color: #181f1c; }
+.btnContacto {
+  text-shadow: 1px 1px 2px black;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #181f1c;
+  padding: 8px 15px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  border: none; }
+  .btnContacto:hover {
+    background-color: #374b42;
+    color: #ffffff; }
 
 .lineaContacto {
   border-top: 1px solid black;
@@ -192,6 +202,10 @@ body {
 .navbar {
   background-color: #181f1c; }
 
+.navbar-brand img {
+  width: 120px;
+  height: auto; }
+
 .nav-item a {
   color: #ffffff; }
 
@@ -213,9 +227,9 @@ body {
   top: 30%;
   text-align: center; }
   .captionCenter h1 {
-    text-shadow: 1px 1px 2px black; }
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; }
   .captionCenter p {
-    text-shadow: 1px 1px 2px black; }
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; }
 
 /*Mueve a la izquierda el texto del banner 2 y 3*/
 .captionLeft {
@@ -226,9 +240,9 @@ body {
     /*título del banner 2 y 3*/
     font-size: xx-large;
     padding-top: 1.5%;
-    text-shadow: 1px 1px 2px black; }
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; }
   .captionLeft p {
-    text-shadow: 1px 1px 2px black; }
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; }
 
 /*Boton de "Ver productos" del banner*/
 .verProductos {
@@ -241,7 +255,7 @@ body {
   transition: all 0.2s ease-in-out;
   border-radius: 5px; }
   .verProductos:hover {
-    background-color: #00000088;
+    background-color: #374b42;
     color: #ffffff; }
 
 /*Imagen fija*/
@@ -346,7 +360,7 @@ body {
     box-shadow: 0 0 15px #0000003d; }
   .productoContenedor img {
     width: 100%;
-    height: 100%;
+    height: auto;
     transition: 3s;
     object-fit: cover; }
     .productoContenedor img:hover {
@@ -432,15 +446,15 @@ footer {
 /*Map*/
 /*keys / Values*/
 .map--tilo:hover {
-  background-color: #c1e46f;
+  background-color: #eec77f;
   border-radius: 50%; }
 
 .map--lavanda:hover {
-  background-color: #898AA6;
+  background-color: #afa6d8;
   border-radius: 50%; }
 
 .map--melissa:hover {
-  background-color: #42855B;
+  background-color: #72a886;
   border-radius: 50%; }
 
 /*MOBILE RESPONSIVE DESIGN BANNER INDEX*/
@@ -459,6 +473,15 @@ footer {
   .productos {
     flex-direction: column;
     align-content: center; } }
+
+/*---MOBILE RESPONSIVE DESIGN LINEAS DEL INDEX y MARGIN DE LA IMAGEN FIJA---*/
+@media screen and (max-width: 500px) {
+  .productoContenedorIndex {
+    width: 80%;
+    height: auto;
+    margin-top: 20px; }
+  .imagenFija {
+    margin-top: 60px; } }
 
 /*---TABLET RESPONSIVE DESIGN INFORMACIÓN---*/
 @media screen and (max-width: 768px) {
