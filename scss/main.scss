@@ -88,8 +88,10 @@ body{
     transition: all 0.2s ease-in-out;
     border-radius: 5px;
     &:hover{
-        background-color: #374b42;
+        background-color: #516b5f;
         color: #ffffff;
+        box-shadow: 2px 2px $colorPrincipal, 3px 3px $colorPrincipal, 3px 3px $colorPrincipal;
+        transform: translateX(-3px);
     }
 }
 
@@ -192,6 +194,7 @@ body{
     object-fit: cover; /*PARA QUE NO SE DEFORME LA IMAGEN*/
         &:hover{
             transform: scale(1.2);
+            filter: brightness(0.30);
         }
     }
     a{
@@ -219,6 +222,7 @@ body{
         object-fit: cover;
         &:hover{
             transform: scale(1.2);
+            filter: opacity(60%);
         }
     }
     a{

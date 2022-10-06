@@ -33,8 +33,10 @@
   border-radius: 5px;
   border: none; }
   .btnContacto:hover {
-    background-color: #374b42;
-    color: #ffffff; }
+    background-color: #516b5f;
+    color: #ffffff;
+    box-shadow: 2px 2px #181f1c, 3px 3px #181f1c, 3px 3px #181f1c;
+    transform: translateX(-3px); }
 
 .lineaContacto {
   border-top: 1px solid black;
@@ -255,8 +257,10 @@ body {
   transition: all 0.2s ease-in-out;
   border-radius: 5px; }
   .verProductos:hover {
-    background-color: #374b42;
-    color: #ffffff; }
+    background-color: #516b5f;
+    color: #ffffff;
+    box-shadow: 2px 2px #181f1c, 3px 3px #181f1c, 3px 3px #181f1c;
+    transform: translateX(-3px); }
 
 /*Imagen fija*/
 .imagenFija {
@@ -342,7 +346,8 @@ body {
     object-fit: cover;
     /*PARA QUE NO SE DEFORME LA IMAGEN*/ }
     .productoContenedorIndex img:hover {
-      transform: scale(1.2); }
+      transform: scale(1.2);
+      filter: brightness(0.3); }
   .productoContenedorIndex a {
     text-decoration: none; }
 
@@ -364,7 +369,8 @@ body {
     transition: 3s;
     object-fit: cover; }
     .productoContenedor img:hover {
-      transform: scale(1.2); }
+      transform: scale(1.2);
+      filter: opacity(60%); }
   .productoContenedor a {
     text-decoration: none; }
 

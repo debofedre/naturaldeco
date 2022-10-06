@@ -34,8 +34,10 @@
     border-radius: 5px;
     border: none;
     &:hover{
-        background-color: #374b42;
+        background-color: #516b5f;
         color: #ffffff;
+        box-shadow: 2px 2px $colorPrincipal, 3px 3px $colorPrincipal, 3px 3px $colorPrincipal;
+        transform: translateX(-3px);
     }
 }
 
