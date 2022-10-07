@@ -1,48 +1,196 @@
 @charset "UTF-8";
 /*Debe ir al principio siempre*/
-/*Contacto bootstrap*/
-/*Banner contacto*/
-.bannerContacto {
-  height: 500px;
+/*Banner bootstrap index*/
+.carousel-item {
   width: 100%;
-  background-color: #ffffff;
-  box-shadow: 10px 5px 5px  #181f1cab;
-  overflow: hidden; }
+  height: 500px; }
+  .carousel-item img {
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
 
-.imagenContacto {
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom bottom;
-  background-image: url(../multimedia/banner/velacontacto.jpg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  object-fit: cover; }
+/*Centraliza el texto del primer banner*/
+.captionCenter {
+  top: 30%;
+  text-align: center; }
+  .captionCenter h1 {
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; }
+  .captionCenter p {
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; }
 
-.btnContacto {
+/*Mueve a la izquierda el texto del banner 2 y 3*/
+.captionLeft {
+  text-align: left;
+  top: 20%;
+  margin-right: 40%; }
+  .captionLeft h2 {
+    /*título del banner 2 y 3*/
+    font-size: xx-large;
+    padding-top: 1.5%;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; }
+  .captionLeft p {
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; }
+
+/*Boton de "Ver productos" del banner*/
+.verProductos {
   text-shadow: 1px 1px 2px black;
   text-decoration: none;
   color: #ffffff;
   background-color: #181f1c;
-  padding: 8px 15px;
+  font-size: large;
+  padding: 8px;
   transition: all 0.2s ease-in-out;
-  border-radius: 5px;
-  border: none; }
-  .btnContacto:hover {
+  border-radius: 5px; }
+  .verProductos:hover {
     background-color: #516b5f;
     color: #ffffff;
     box-shadow: 2px 2px #181f1c, 3px 3px #181f1c, 3px 3px #181f1c;
     transform: translateX(-3px); }
 
-.lineaContacto {
-  border-top: 1px solid black;
+/*Nuestras líneas*/
+.nuestrasLineas {
+  font-size: xx-large;
+  margin: 7% auto 1% auto;
+  text-align: center; }
+
+/*Línea decorativa debajo de "Nuestras líneas"*/
+.lineaIndex {
+  border-top: 1px solid #000000;
   height: 2px;
-  max-width: 60px;
-  margin: 20px 0; }
+  max-width: 100px;
+  padding: 0;
+  margin: 20px auto 0 auto; }
+
+/*Contenedor de las imagenes del index*/
+.productoContenedorIndex {
+  width: 420px;
+  height: 410px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 1%;
+  background-color: #ffffff15;
+  transition: 1s;
+  border-radius: 5px; }
+  .productoContenedorIndex:hover {
+    box-shadow: 0 0 15px #0000003d; }
+  .productoContenedorIndex img {
+    width: 100%;
+    height: 100%;
+    transition: 3s;
+    object-fit: cover;
+    /*PARA QUE NO SE DEFORME LA IMAGEN*/ }
+    .productoContenedorIndex img:hover {
+      transform: scale(1.2);
+      filter: brightness(0.3); }
+  .productoContenedorIndex a {
+    text-decoration: none; }
+
+/*Imagen fija*/
+.imagenFija {
+  background-image: url(../multimedia/banner/otono.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px; }
+  .imagenFija h3, .imagenFija p {
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 90px;
+    text-size-adjust: 30px;
+    text-shadow: 1px 1px 2px black; }
+  .imagenFija p {
+    padding-top: 0; }
+  .imagenFija .lineaFija {
+    border-top: 1px solid #ffffff;
+    height: 2px;
+    max-width: 150px;
+    padding: 0;
+    margin: 20px auto 0 auto; }
+
+/*Esencias*/
+.esenciasTexto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .esenciasTexto div img {
+    height: 40px;
+    width: 40px; }
+
+.esenciaIcono {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .esenciaIcono img {
+    margin-right: 10px; }
+
+/*Map*/
+/*keys / Values*/
+.map--tilo:hover {
+  background-color: #eec77f;
+  border-radius: 50%; }
+
+.map--lavanda:hover {
+  background-color: #afa6d8;
+  border-radius: 50%; }
+
+.map--melissa:hover {
+  background-color: #72a886;
+  border-radius: 50%; }
+
+/*Poductos*/
+.productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  z-index: -1;
+  /*PORQUE EL NAV ME QUEDABA ABAJO  DE LAS IMG*/ }
+
+/*Contenedor de todas las imagenes*/
+.productoContenedor {
+  width: 300px;
+  height: 330px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 1%;
+  background-color: #ffffff15;
+  transition: 1s;
+  border-radius: 5px; }
+  .productoContenedor:hover {
+    box-shadow: 0 0 15px #0000003d; }
+  .productoContenedor img {
+    width: 100%;
+    height: auto;
+    transition: 3s;
+    object-fit: cover; }
+    .productoContenedor img:hover {
+      transform: scale(1.2);
+      filter: opacity(60%); }
+  .productoContenedor a {
+    text-decoration: none; }
+
+.imagenContenedor {
+  width: 100%;
+  height: 85%;
+  transition: 3s;
+  overflow: hidden; }
+
+.textoProducto {
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  color: #000000;
+  padding: 3px 0; }
+  .textoProducto p {
+    /*Texto de la tarjeta más unido*/
+    margin-bottom: 5px; }
+  .textoProducto:visited {
+    color: #000000; }
 
 /*Información*/
 .contenedorGrid {
@@ -187,20 +335,65 @@
   .imagenRefill:hover {
     filter: grayscale(90%); }
 
-/*MARGIN RESET*/
+/*Contacto bootstrap*/
+/*Banner contacto*/
+.bannerContacto {
+  height: 500px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 10px 5px 5px  #181f1cab;
+  overflow: hidden; }
+
+.imagenContacto {
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom bottom;
+  background-image: url(../multimedia/banner/velacontacto.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover; }
+
+.btnContacto {
+  text-shadow: 1px 1px 2px black;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #181f1c;
+  padding: 8px 15px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  border: none; }
+  .btnContacto:hover {
+    background-color: #516b5f;
+    color: #ffffff;
+    box-shadow: 2px 2px #181f1c, 3px 3px #181f1c, 3px 3px #181f1c;
+    transform: translateX(-3px); }
+
+.lineaContacto {
+  border-top: 1px solid black;
+  height: 2px;
+  max-width: 60px;
+  margin: 20px 0; }
+
+/*Margin reset*/
 * {
   margin: 0;
   padding: 0; }
+
+/*Font y background color*/
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto Slab', serif; }
 
 /*Scroll*/
 html {
   scroll-behavior: smooth; }
 
-body {
-  background-color: #ffffff;
-  font-family: 'Roboto Slab', serif; }
-
-/*Negritas*/
+/*Bold*/
 .font-weight {
   font-weight: bold; }
 
@@ -217,184 +410,6 @@ body {
 
 .tituloNav {
   color: #ffffff; }
-
-/*Banner bootstrap index*/
-.carousel-item {
-  width: 100%;
-  height: 500px; }
-  .carousel-item img {
-    background-repeat: no-repeat;
-    object-fit: cover;
-    width: 100%;
-    height: 100%; }
-
-/*Centraliza el texto del banner 1*/
-.captionCenter {
-  top: 30%;
-  text-align: center; }
-  .captionCenter h1 {
-    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; }
-  .captionCenter p {
-    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; }
-
-/*Mueve a la izquierda el texto del banner 2 y 3*/
-.captionLeft {
-  text-align: left;
-  top: 20%;
-  margin-right: 40%; }
-  .captionLeft h2 {
-    /*título del banner 2 y 3*/
-    font-size: xx-large;
-    padding-top: 1.5%;
-    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; }
-  .captionLeft p {
-    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; }
-
-/*Boton de "Ver productos" del banner*/
-.verProductos {
-  text-shadow: 1px 1px 2px black;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #181f1c;
-  font-size: large;
-  padding: 8px;
-  transition: all 0.2s ease-in-out;
-  border-radius: 5px; }
-  .verProductos:hover {
-    background-color: #516b5f;
-    color: #ffffff;
-    box-shadow: 2px 2px #181f1c, 3px 3px #181f1c, 3px 3px #181f1c;
-    transform: translateX(-3px); }
-
-/*Imagen fija*/
-.imagenFija {
-  background-image: url(../multimedia/banner/otono.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 300px; }
-  .imagenFija h3, .imagenFija p {
-    justify-content: center;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 90px;
-    text-size-adjust: 30px;
-    text-shadow: 1px 1px 2px black; }
-  .imagenFija p {
-    padding-top: 0; }
-  .imagenFija .lineaFija {
-    border-top: 1px solid #ffffff;
-    height: 2px;
-    max-width: 150px;
-    padding: 0;
-    margin: 20px auto 0 auto; }
-
-/*Esencias*/
-.esenciasTexto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  margin-bottom: 50px; }
-  .esenciasTexto div img {
-    height: 40px;
-    width: 40px; }
-
-.esenciaIcono {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-  .esenciaIcono img {
-    margin-right: 10px; }
-
-/*Nuestras líneas*/
-.nuestrasLineas {
-  font-size: xx-large;
-  margin: 7% auto 1% auto;
-  text-align: center; }
-
-/*Línea decorativa debajo de "Nuestras líneas"*/
-.lineaIndex {
-  border-top: 1px solid #000000;
-  height: 2px;
-  max-width: 100px;
-  padding: 0;
-  margin: 20px auto 0 auto; }
-
-/*Poductos*/
-.productos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  z-index: -1;
-  /*PORQUE EL NAV ME QUEDABA ABAJO  DE LAS IMG*/ }
-
-/*Contenedor de las imagenes del index*/
-.productoContenedorIndex {
-  width: 420px;
-  height: 410px;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  padding: 1%;
-  background-color: #ffffff15;
-  transition: 1s;
-  border-radius: 5px; }
-  .productoContenedorIndex:hover {
-    box-shadow: 0 0 15px #0000003d; }
-  .productoContenedorIndex img {
-    width: 100%;
-    height: 100%;
-    transition: 3s;
-    object-fit: cover;
-    /*PARA QUE NO SE DEFORME LA IMAGEN*/ }
-    .productoContenedorIndex img:hover {
-      transform: scale(1.2);
-      filter: brightness(0.3); }
-  .productoContenedorIndex a {
-    text-decoration: none; }
-
-/*Contenedor de todas las imagenes*/
-.productoContenedor {
-  width: 300px;
-  height: 330px;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  padding: 1%;
-  background-color: #ffffff15;
-  transition: 1s;
-  border-radius: 5px; }
-  .productoContenedor:hover {
-    box-shadow: 0 0 15px #0000003d; }
-  .productoContenedor img {
-    width: 100%;
-    height: auto;
-    transition: 3s;
-    object-fit: cover; }
-    .productoContenedor img:hover {
-      transform: scale(1.2);
-      filter: opacity(60%); }
-  .productoContenedor a {
-    text-decoration: none; }
-
-.imagenContenedor {
-  width: 100%;
-  height: 85%;
-  transition: 3s;
-  overflow: hidden; }
-
-.textoProducto {
-  display: flex;
-  flex-direction: column;
-  font-size: medium;
-  color: #000000;
-  padding: 3px 0; }
-  .textoProducto p {
-    /*Texto de la tarjeta más unido*/
-    margin-bottom: 5px; }
-  .textoProducto:visited {
-    color: #000000; }
 
 /*Mixin*/
 /*Sticky Whatsaap*/
@@ -453,20 +468,6 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px; }
 
-/*Map*/
-/*keys / Values*/
-.map--tilo:hover {
-  background-color: #eec77f;
-  border-radius: 50%; }
-
-.map--lavanda:hover {
-  background-color: #afa6d8;
-  border-radius: 50%; }
-
-.map--melissa:hover {
-  background-color: #72a886;
-  border-radius: 50%; }
-
 /*MOBILE RESPONSIVE DESIGN BANNER INDEX*/
 @media screen and (max-width: 500px) {
   .carousel {
@@ -480,6 +481,11 @@ footer {
 
 /*---MOBILE RESPONSIVE DESIGN PRODUCTOS---*/
 @media screen and (max-width: 500px) {
+  .productoContenedor {
+    width: 200px;
+    height: 230px;
+    align-content: space-around;
+    margin-bottom: 30px; }
   .productos {
     flex-direction: column;
     align-content: center;

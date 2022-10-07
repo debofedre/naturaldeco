@@ -20,6 +20,12 @@
 /*---MOBILE RESPONSIVE DESIGN PRODUCTOS---*/
 @media screen and (max-width: 500px) {
 
+    .productoContenedor{
+        width: 200px;
+        height: 230px;
+        align-content: space-around;
+        margin-bottom: 30px;
+    }
     .productos{
         flex-direction: column;
         align-content: center;
@@ -113,10 +119,6 @@
     .containerContacto{
         margin-top: 3rem;
         margin-bottom: 3rem;
-    }
-
-    .container-fluid{
-        
     }
 
     /*columna*/
