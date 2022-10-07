@@ -348,7 +348,6 @@
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom bottom;
   background-image: url(../multimedia/banner/velacontacto.jpg);
   display: flex;
   flex-direction: column;
@@ -527,8 +526,8 @@ footer {
 
 /*---MOBILE RESPONSIVE DESIGN CONTACTO---*/
 @media (max-width: 500px) {
-  .imagenContacto {
-    background-image: url(../multimedia/banner/velacontactoresponsive.jpg); } }
+  .bannerContacto {
+    display: none; } }
 
 /*---MOBILE RESPONSIVE DESIGN CONTACTO---*/
 @media (max-width: 570px) {
