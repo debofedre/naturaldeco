@@ -95,7 +95,7 @@
   color: #000000; }
 
 .contenedorSoja {
-  width: 70%; }
+  width: 90%; }
 
 /*Consejos texto*/
 .infoConsejos {
@@ -109,7 +109,7 @@
   color: #000000; }
 
 .contenedorConsejos {
-  width: 70%; }
+  width: 90%; }
 
 /*Terapia texto*/
 .infoTerapia {
@@ -123,7 +123,7 @@
   color: #000000; }
 
 .contenedorTerapia {
-  width: 70%; }
+  width: 90%; }
 
 .listaTerapia {
   text-align: justify; }
@@ -140,7 +140,7 @@
   color: #000000; }
 
 .contenedorRefill {
-  width: 70%; }
+  width: 90%; }
 
 .listaRefill {
   text-align: justify; }
@@ -199,6 +199,10 @@ html {
 body {
   background-color: #ffffff;
   font-family: 'Roboto Slab', serif; }
+
+/*Negritas*/
+.font-weight {
+  font-weight: bold; }
 
 /*Navegador Bootstrap*/
 .navbar {
@@ -508,7 +512,7 @@ footer {
   .contenedorGrid {
     grid-template-columns: 1fr;
     grid-template-rows: 1.50fr 1.30fr 3.30fr 1.30fr 1.30fr 1.30fr 1.80fr 1.30fr;
-    gap: 0;
+    grid-column-gap: 10px;
     grid-template-areas: "infoSoja" "imagenSoja" "infoConsejos" "imagenConsejos" "infoTerapia" "imagenTerapia" "infoRefill" "imagenRefill"; }
   .imagenSoja {
     height: 100%; }

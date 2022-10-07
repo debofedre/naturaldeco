@@ -68,7 +68,7 @@
     .contenedorGrid{
         grid-template-columns: 1fr;
         grid-template-rows: 1.50fr 1.30fr 3.30fr 1.30fr 1.30fr 1.30fr 1.80fr 1.30fr;
-        gap: 0;
+        grid-column-gap: 10px;
         grid-template-areas:
         "infoSoja"
         "imagenSoja"
