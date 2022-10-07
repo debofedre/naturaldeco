@@ -44,9 +44,7 @@
   border-radius: 5px; }
   .verProductos:hover {
     background-color: #516b5f;
-    color: #ffffff;
-    box-shadow: 2px 2px #212b27, 3px 3px #212b27, 3px 3px #212b27;
-    transform: translateX(-3px); }
+    color: #ffffff; }
 
 /*Nuestras líneas*/
 .nuestrasLineas {
@@ -369,9 +367,7 @@
   border: none; }
   .btnContacto:hover {
     background-color: #516b5f;
-    color: #ffffff;
-    box-shadow: 2px 2px #212b27, 3px 3px #212b27, 3px 3px #212b27;
-    transform: translateX(-3px); }
+    color: #ffffff; }
 
 .lineaContacto {
   border-top: 1px solid black;
