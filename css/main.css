@@ -525,8 +525,8 @@ footer {
   .imagenRefill {
     height: 100%; } }
 
-/*---TABLET RESPONSIVE DESIGN CONTACTO---*/
-@media (max-width: 820px) {
+/*---MOBILE RESPONSIVE DESIGN CONTACTO---*/
+@media (max-width: 500px) {
   .imagenContacto {
     background-image: url(../multimedia/banner/velacontactoresponsive.jpg); } }
 
